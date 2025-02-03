@@ -3,5 +3,4 @@ Flask==3.0.3
 numpy
 scipy
 joblib
-threadpoolctl
-scikit-learn-core
+scikit-learn
