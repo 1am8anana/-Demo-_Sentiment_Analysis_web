@@ -1,9 +1,18 @@
 {
     "version": 2,
+    "functions": {
+        "api/index.py": {
+            "maxLambdaSize": "50mb"
+        }
+    },
     "builds": [
         {
             "src": "app.py",
             "use": "@vercel/python"
+        },
+        {
+            "src": "Classifier/Naive Bayes_pipeline.pickle",
+            "use": "@vercel/static"
         }
     ],
     "routes": [
@@ -12,4 +21,4 @@
             "dest": "app.py"
         }
     ]
-}  
+}
